@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Calculator</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&family=Spartan:wght@500;700&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body class="theme-1">
+    <main class="main">
+      <header class="header">
+        <h1 class="heading">calc</h1>
+        <div class="toggle-theme">
+          <h2 class="toggle-theme__heading">THEME</h2>
+          <div class="toggle-theme__box">
+            <div class="toggle-theme__numbers">
+              <div class="toggle-theme__numbers--1">1</div>
+              <div class="toggle-theme__numbers--2">2</div>
+              <div class="toggle-theme__numbers--3">3</div>
+            </div>
+            <div class="toggle-theme__button">
+              <div class="toggle-theme__button--1 active" data-toggle="1"></div>
+              <div class="toggle-theme__button--2" data-toggle="2"></div>
+              <div class="toggle-theme__button--3" data-toggle="3"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="screen">
+        <div class="previous-operand" data-previous-operand></div>
+        <div class="current-operand" data-current-operand></div>
+      </div>
+      <div class="buttons-box">
+        <div class="buttons">
+          <button class="buttons__number" data-number>7</button>
+          <button class="buttons__number" data-number>8</button>
+          <button class="buttons__number" data-number>9</button>
+          <button class="buttons__delete" data-delete>del</button>
+
+          <button class="buttons__number" data-number>4</button>
+          <button class="buttons__number" data-number>5</button>
+          <button class="buttons__number" data-number>6</button>
+          <button class="buttons__operator" data-operator>+</button>
+
+          <button class="buttons__number" data-number>1</button>
+          <button class="buttons__number" data-number>2</button>
+          <button class="buttons__number" data-number>3</button>
+          <button class="buttons__operator" data-operator>-</button>
+
+          <button class="buttons__number" data-number>.</button>
+          <button class="buttons__number" data-number>0</button>
+          <button class="buttons__operator" data-operator>/</button>
+          <button class="buttons__operator" data-operator>*</button>
+
+          <button class="buttons__reset grid-col-2" data-reset>reset</button>
+          <button class="buttons__operator grid-col-2" data-equal>
+            &equals;
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="calc.js" defer></script>
+  </body>
+</html>
